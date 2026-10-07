@@ -133,7 +133,7 @@ async function updateMetadata(userId) {
       const memberData = await memberResponse.json();
       const userRoles = memberData.roles; // This maps directly to an array of their role IDs
 
-      // Evaluate the numerical rank metrics matching your type: 2 schema rules
+      // Evaluate the numerical rank metrics matching your type: 3 schema rules
       if (userRoles.includes(OWNER_ROLE_ID)) {
         currentLevel = 3; // Assigned Owner Authority Tier
       } else if (userRoles.includes(MANAGER_ROLE_ID)) {
